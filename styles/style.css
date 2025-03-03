@@ -1,5 +1,79 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --bg-color: #000028;
+  --title-color : #DB00FF;
+  --font-color: #F1B2CE;
+  --accent-color: #FF0070;
+
+  --font-family-main: 'IBM Plex mono';
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  --line-height-main: 23.4px;
+  --line-height-title: 82.5%;
+  --font-size-main: 18px;
+
+  --header-height: 668px;
+
+  --padding-main: 10px;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--font-family-main), sans-serif;
+  background-color: var(--bg-color);
+  font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
+  padding: var(--padding-main);
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  min-height: var(--header-height);
+}
+
+.header__dark-mode-element {
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  right: 9px;
+}
+
+.header__dark-mode-element::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--accent-color);
+  /* margin-block-end: 1px; */
+  height: 9px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-self: right;
+  margin-block-start: 63px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: transparent;
+  color: var(--accent-color);
+  font-weight: var(--font-weight-normal);
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button:disabled {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--line-height-title);
+  color: var(--accent-color);
 }
