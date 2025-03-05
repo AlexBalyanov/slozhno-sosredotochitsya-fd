@@ -149,20 +149,14 @@
   color: var(--accent-color);
 }
 
-.section-title-decore:not(:last-child) {
-  margin-block-end: 20px;
-}
-
-.advices-for-concentrate__subtitle.title-decore {
-  margin-block-end: 20px;
-}
-
 .text-decore {
   color: var(--font-color);
-  padding-block-start: 10px;
 }
 
-.text-decore:not(:last-child) {
+.margin-m {
   margin-block-end: 20px;
 }
 
+.margin-s {
+  margin-block-end: 10px;
+}
