@@ -12,8 +12,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  block-size: 100vh;
+  /* block-size: 100vh; */
   padding: var(--padding-main);
+  margin-block-end: 40px;
   min-block-size: 668px;
 }
 
@@ -116,24 +117,10 @@
   background-color: var(--accent-color);
 }
 
-.hard-to-concentrate {
+.content-section {
   display: grid;
   grid-template-columns: 1fr;
-  margin-block-start: 40px;
-  padding-inline: var(--padding-main);
-}
-
-.decrease-of-concentrate {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-block-start: 50px;
-  padding-inline: var(--padding-main);
-}
-
-.advices-for-concentrate {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-block-start: 50px;
+  margin-block-end: 50px;
   padding-inline: var(--padding-main);
 }
 
@@ -142,39 +129,39 @@
   font-size: var(--font-size-main);
 }
 
-.text-decore {
+.text-card__paragraph {
   color: var(--font-color);
 }
 
-.advices-for-concentrate__advice {
+.advices-article .text-card__title {
   font-weight: var(--font-weight-normal);
 }
 
-.text-link {
+.text-card__link {
   position: relative;
   --text-shadow: 2px 2px 0 var(--accent-color);
   text-shadow: var(--text-shadow);
 }
 
-.text-link:focus {
+.text-card__link:focus {
   outline: none;
 }
 
-.text-link:focus-visible {
+.text-card__link:focus-visible {
   outline: 1px solid var(--font-color);
 }
 
 /* попробовал сделать подчеркивание как в макете, даже если у текста есть тень,
 но не знаю, можно ли вообще писать такое для простого подчеркивания ссылки, извините c: */
 
-.text-link::after {
+.text-card__link::after {
   content: "";
   position: absolute;
   display: block;
   inset: 0;
 }
 
-.text-link:hover::after {
+.text-card__link:hover::after {
   border-bottom: 1px solid var(--font-color);
 }
 
@@ -206,7 +193,7 @@
   justify-content: center;
   align-items: center;
   margin-block-start: 40px;
-  block-size: 100vh;
+  /* block-size: 100vh; */
   min-block-size: 668px;
 }
 
@@ -256,7 +243,7 @@
     inset-inline-start: 20px;
   }
   
-  .hard-to-concentrate {
+  .content-section {
     grid-template-columns: 1fr 472px;
     margin-block-start: 60px;
   }
