@@ -1,9 +1,11 @@
 :root {
   --bg-color: #000028;
   --title-color : #DB00FF;
+  --dark-color: #000028;
   --font-color: #F1B2CE;
   --accent-color: #FF0070;
   --elements-accent-color: #FF0070;
+  --theme-buttons-hover-color: #FF007066;
   --text-shadow: 4px 4px 0 var(--accent-color);
 
   --bg-cover-image: url("../images/cover-image-dark.png") center/cover no-repeat;
@@ -16,4 +18,8 @@
   --line-height-title: 82.5%;
   
   --padding-main: 10px;
+
+  --transition-duration: 0.3s;
+
+  --show-rec: flex;
 }

@@ -5,9 +5,12 @@
   --font-color: #353430;
   --accent-color: #FF8DCB;
   --elements-accent-color: #353430;
+  --theme-buttons-hover-color: #32312D66;
   --text-shadow: 4px 4px 0 var(--accent-color);
 
   --bg-cover-image: url("../images/cover-image-light.png") center/cover no-repeat;
+
+  --show-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,16 +21,11 @@
     --font-color: #353430;
     --accent-color: #FF8DCB;
     --elements-accent-color: #353430;
+    --theme-buttons-hover-color: #32312D66;
     --text-shadow: 4px 4px 0 var(--accent-color);
   
     --bg-cover-image: url("../images/cover-image-light.png") center/cover no-repeat;
+
+    --show-rec: none;
   }
-}
-
-.theme-light .header__dark-mode-element {
-  display: none;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid #32312D66;
 }
